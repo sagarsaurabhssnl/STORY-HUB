@@ -32,7 +32,7 @@ export default function read() {
     async function intialize() {
         getValue().then(() => {
             setTimeout(() => {
-                if (!Story) {
+                if (Story) {
                     setcontentType(true);
                     console.log("ok1");
                 } else {
